@@ -353,7 +353,7 @@ std::unique_ptr<Expression> expr;
 		int iElement; // 2 : userType, // 1 : item
 		size_t idx; // for stable? - chk!!
 	public:
-		SortInfo(wiz::StringBuilder* builder = nullptr) : idx(-1), iElement(-1) { }
+		//SortInfo(wiz::StringBuilder* builder = nullptr) : idx(-1), iElement(-1) { }
 		SortInfo(const std::string& data, int iElement, size_t idx)
 			: data(data), iElement(iElement), idx(idx)
 		{
@@ -389,7 +389,7 @@ std::unique_ptr<Expression> expr;
 		int iElement; // 2 : userType, // 1 : item
 		size_t idx; // for stable? - chk!!
 	public:
-		SortInfo2(wiz::StringBuilder* builder = nullptr) : idx(-1), iElement(-1) { }
+		//SortInfo2(wiz::StringBuilder* builder = nullptr) : idx(-1), iElement(-1) { }
 
 		SortInfo2(const std::string& data, int iElement, size_t idx)
 			: data(data), iElement(iElement), idx(idx)
@@ -3756,8 +3756,8 @@ namespace wiz {
 			// "root" -> position.
 			static std::string SearchItem(UserType& global, const std::string& var, 
 				const ExecuteData& excuteData,
-				const std::string& start_dir = "root",
-				StringBuilder* builder = nullptr)
+				const std::string& start_dir = "root"
+				)//StringBuilder* builder = nullptr)
 			{
 				std::vector<std::string> positionVec;
 				std::string temp;

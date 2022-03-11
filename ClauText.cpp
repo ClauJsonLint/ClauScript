@@ -2608,7 +2608,7 @@ void ClauText::ShellMode(wiz::load_data::UserType& global) {
 void ClauText::MStyleTest(wiz::load_data::UserType* pUt)
 {
 #ifdef _MSC_VER
-	wiz::StringBuilder builder(1024);
+	//wiz::StringBuilder builder(1024);
 	std::vector<wiz::load_data::ItemType<wiz::load_data::UserType*>> utVec;
 	std::vector<MData> mdVec;
 	//std::vector<vector<MData>> mdVec2;
