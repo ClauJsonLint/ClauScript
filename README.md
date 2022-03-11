@@ -17,7 +17,7 @@ class Statement { };
 class If : public Statement {
   public:
     Expression* condition;
-    std::vector<Statement*> statements; // executed if conidtion is true
+    std::vector<Statement*> statements; // executed if condition is true
 };
 ```
 # ClauScript Code
